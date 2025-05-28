@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 SNAKE QUEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🐍 SNAKE QUEST</h1>
+        <p class="subtitle">Use arrow keys to control the snake. Don't hit walls or yourself!</p>
+        
+        <div class="stats">
+            <div>Score: <span id="score">0</span></div>
+            <div>Status: <span id="status">Press Start to Play</span></div>
+            <div>Speed: <span id="speed">1</span></div>
+        </div>
+        
+        <div class="game-container">
+            <div id="gameBoard" class="game-board"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Start Game</button>
+            <button id="pauseBtn" class="btn btn-secondary hidden">Pause</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
+        
+        <div class="instructions">
+            <p>Use arrow keys (↑ ↓ ← →) to control the snake</p>
+            <p>Eat the red food to grow and increase your score</p>
+            <p>Avoid hitting walls or yourself!</p>
+        </div>
+    </div>
+
+    <div id="gameOverModal" class="game-over hidden">
+        <div class="game-over-content">
+            <h2 id="gameOverTitle">Game Over!</h2>
+            <p id="gameOverMessage">Your final score: 0</p>
+            <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
