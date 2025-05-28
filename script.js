@@ -1,4 +1,4 @@
-class SnakeGame {
+class SnakeGame{
     constructor() {
         this.gridWidth = 25;
         this.gridHeight = 20;
